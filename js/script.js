@@ -1,5 +1,5 @@
 /*global $*/
-let player1 = "O";
+let player;
 let count = 0;
 let array;
 
@@ -16,7 +16,6 @@ $(document).ready(function(){
             $(tile).text(player);
         }
         
-        console.log(array[0].innerText);
         if(array[0].innerText===array[3].innerText && array[0].innerText===array[6].innerText){
             if(array[0].innerText==="O"){
                 $("#result").text("Player O won");
@@ -25,7 +24,7 @@ $(document).ready(function(){
                 $("#result").text("Player X won");
             }
         }
-        else if(array[1].innerText===array[4].innerText && array[1].innerText===array[7].innerText){
+        if(array[1].innerText===array[4].innerText && array[1].innerText===array[7].innerText){
             if(array[1].innerText==="O"){
                 $("#result").text("Player O won");
             }
@@ -33,7 +32,7 @@ $(document).ready(function(){
                 $("#result").text("Player X won");
             }
         }
-        else if(array[2].innerText===array[5].innerText && array[2].innerText()===array[8].innerText){
+        if(array[2].innerText===array[5].innerText && array[2].innerText()===array[8].innerText){
             if(array[2].innerText==="O"){
                 $("#result").text("Player O won");
             }
@@ -41,7 +40,7 @@ $(document).ready(function(){
                 $("#result").text("Player X won");
             }
         }
-        else if(array[0].innerText===array[1].innerText && array[0].innerText===array[2].innerText){
+        if(array[0].innerText===array[1].innerText && array[0].innerText===array[2].innerText){
             if(array[0].innerText==="O"){
                 $("#result").text("Player O won");
             }
@@ -49,7 +48,7 @@ $(document).ready(function(){
                 $("#result").text("Player X won");
             }
         }
-        else if(array[3].innerText===array[4].innerText && array[3].innerText===array[5].innerText){
+        if(array[3].innerText===array[4].innerText && array[3].innerText===array[5].innerText){
             if(array[3].innerText==="O"){
                 $("#result").text("Player O won");
             }
@@ -57,7 +56,7 @@ $(document).ready(function(){
                 $("#result").text("Player X won");
             }
         }
-        else if(array[6].innerText===array[7].innerText && array[6].innerText===array[8].innerText){
+        if(array[6].innerText===array[7].innerText && array[6].innerText===array[8].innerText){
             if(array[6].innerText==="O"){
                 $("#result").text("Player O won");
             }
@@ -65,7 +64,7 @@ $(document).ready(function(){
                 $("#result").text("Player X won");
             }
         }
-        else if(array[0].innerText===array[4].innerText && array[0].innerText===array[8].innerText){
+        if(array[0].innerText===array[4].innerText && array[0].innerText===array[8].innerText){
             if(array[0].innerText==="O"){
                 $("#result").text("Player O won");
             }
@@ -73,7 +72,7 @@ $(document).ready(function(){
                 $("#result").text("Player X won");
             }
         }
-        else if(array[2].innerText===array[4].innerText && array[2].innerText===array[6].innerText){
+        if(array[2].innerText===array[4].innerText && array[2].innerText===array[6].innerText){
             if(array[2].innerText==="O"){
                 $("#result").text("Player O won");
             }
